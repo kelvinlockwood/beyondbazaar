@@ -1,12 +1,11 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useRef } from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { css } from '@emotion/core';
 // import styled from '@emotion/styled';
 
 import Layout from '../components/layout';
 import ProjectsSlider from '../components/ProjectsSlider';
-import WhatWeDo from '../components/WhatWeDo';
 import InsightsSlider from '../components/InsightsSlider';
 import CapabilitiesSlider from '../components/CapabilitiesSlider';
 import LogoGrid from '../components/LogoGrid';

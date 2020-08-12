@@ -62,9 +62,6 @@ const Footer = () => {
         <Link css={linkStyle} to='/about/'>
           About
         </Link>
-        <Link css={linkStyle} to='/careers/'>
-          Careers
-        </Link>
         <Link css={linkStyle} to='/contact/'>
           Contact
         </Link>

@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable eslint no-nested-ternary */
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';

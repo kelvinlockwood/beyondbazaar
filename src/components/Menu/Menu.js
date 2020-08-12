@@ -328,9 +328,9 @@ const Menu = ({ menuOpen, toggleOpen }) => {
                   linkGroupStyles,
                 ]}
                 onClick={() => toggleOpen()}
-                to='/partners/drupal/'
+                to='/404/'
               >
-                Drupal
+                x-partners
               </Link>
               <span
                 css={[
@@ -353,9 +353,9 @@ const Menu = ({ menuOpen, toggleOpen }) => {
                   linkGroupStyles,
                 ]}
                 onClick={() => toggleOpen()}
-                to='/partners/acquia/'
+                to='/404/'
               >
-                Acquia
+                x-partners
               </Link>
             </span>
 
@@ -368,9 +368,9 @@ const Menu = ({ menuOpen, toggleOpen }) => {
                 desktopDelay2,
               ]}
               onClick={() => toggleOpen()}
-              to='/partners/shopify/'
+              to='/404/'
             >
-              Shopify
+              x-partners
             </Link>
             <Link
               css={[
@@ -381,9 +381,9 @@ const Menu = ({ menuOpen, toggleOpen }) => {
                 desktopDelay3,
               ]}
               onClick={() => toggleOpen()}
-              to='/partners/gatsby/'
+              to='/404/'
             >
-              Gatsby
+              x-partners
             </Link>
             <Link
               css={[
@@ -394,9 +394,9 @@ const Menu = ({ menuOpen, toggleOpen }) => {
                 desktopDelay4,
               ]}
               onClick={() => toggleOpen()}
-              to='/partners/big-commerce/'
+              to='/404/'
             >
-              BigCommerce
+              x-partners
             </Link>
           </div>
         </section>
