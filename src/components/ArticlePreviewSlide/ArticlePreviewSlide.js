@@ -118,7 +118,7 @@ const ArticlePreviewSlide = ({ article }) => {
             }
           `}
         >
-          <Link to={ensureTrailingSlash(article.path.alias)}>
+          <Link to='/404/'>
             <h3>{article.title}</h3>
             <footer>
               {`${article.created} - ${article.relationships.uid.name}`}

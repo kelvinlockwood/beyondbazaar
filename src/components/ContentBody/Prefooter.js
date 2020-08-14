@@ -68,7 +68,7 @@ const Prefooter = ({ data }) => (
       >
         <p css={pStyles}>{data.field_primary_lead_in_text}</p>
         <h2 css={h2Styles}>{data.field_primary_body}</h2>
-        {data.field_primary_cta && (
+        {/* {data.field_primary_cta && (
           <Button
             onClick={() =>
               navigate(
@@ -80,7 +80,8 @@ const Prefooter = ({ data }) => (
           >
             {data.field_primary_cta.title}
           </Button>
-        )}
+        )} */}
+        <Button>Commented Out</Button>
       </TextWrapper>
     </div>
     <div>
@@ -94,7 +95,7 @@ const Prefooter = ({ data }) => (
       >
         <p css={pStyles}>{data.field_secondary_lead_in_text}</p>
         <h2 css={h2Styles}>{data.field_secondary_body}</h2>
-        {data.field_secondary_cta && (
+        {/* {data.field_secondary_cta && (
           <Button
             onClick={() =>
               navigate(
@@ -106,7 +107,8 @@ const Prefooter = ({ data }) => (
           >
             {data.field_secondary_cta.title}
           </Button>
-        )}
+        )} */}
+        <Button>Commented Out</Button>
       </TextWrapper>
     </div>
   </SplitSection>
