@@ -122,9 +122,10 @@ const ProjectPreview = ({ project }) => {
         <h1 css={h1Styles}>{project.title}</h1>
       </div>
       <ImageCollage images={images} type={project.field_image_arrangement} />
-      <Button onClick={() => navigate(ensureTrailingSlash(project.path.alias))}>
+      {/* <Button onClick={() => navigate(ensureTrailingSlash(project.path.alias))}>
         View Case Study
-      </Button>
+      </Button> */}
+      <Button>Commented Out</Button>
     </div>
   );
 };

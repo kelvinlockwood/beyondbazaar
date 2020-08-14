@@ -12,7 +12,7 @@ exports.createPages = async ({ actions, graphql }) => {
         nodes {
           id
           title
-          drupal_internal__nid
+          // drupal_internal__nid
           path {
             alias
           }
@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql }) => {
         nodes {
           id
           title
-          drupal_internal__nid
+          // drupal_internal__nid
           path {
             alias
           }
@@ -45,7 +45,7 @@ exports.createPages = async ({ actions, graphql }) => {
         nodes {
           id
           title
-          drupal_internal__nid
+          // drupal_internal__nid
           created(formatString: "MMM D, YYYY")
           body {
             processed
@@ -88,39 +88,39 @@ exports.createPages = async ({ actions, graphql }) => {
 
   const updatedRedirects = await updatePaths(data);
 
-  caseStudies.nodes.map(studyData =>
-    createPage({
-      path: ensureTrailingSlash(studyData.path.alias),
-      component: path.resolve(`src/templates/studies.js`),
-      context: {
-        StudyId: studyData.id,
-      },
-    })
-  );
+  // caseStudies.nodes.map(studyData =>
+  //   createPage({
+  //     path: ensureTrailingSlash(studyData.path.alias),
+  //     component: path.resolve(`src/templates/studies.js`),
+  //     context: {
+  //       StudyId: studyData.id,
+  //     },
+  //   })
+  // );
 
-  insights.nodes.map(insightData =>
-    createPage({
-      path: ensureTrailingSlash(insightData.path.alias),
-      component: path.resolve(`src/templates/insights.js`),
-      context: {
-        PostId: insightData.id,
-        PostTags: insightData.relationships.field_tags.map(tag => tag.name),
-      },
-    })
-  );
+  // insights.nodes.map(insightData =>
+  //   createPage({
+  //     path: ensureTrailingSlash(insightData.path.alias),
+  //     component: path.resolve(`src/templates/insights.js`),
+  //     context: {
+  //       PostId: insightData.id,
+  //       PostTags: insightData.relationships.field_tags.map(tag => tag.name),
+  //     },
+  //   })
+  // );
 
-  legacyInsights.nodes.map(legacyInsight =>
-    createPage({
-      path: ensureTrailingSlash(legacyInsight.path.alias),
-      component: path.resolve(`src/templates/legacyInsights.js`),
-      context: {
-        title: legacyInsight.title,
-        author: legacyInsight.relationships.uid.name,
-        created: legacyInsight.created,
-        body: legacyInsight.body.processed,
-      },
-    })
-  );
+  // legacyInsights.nodes.map(legacyInsight =>
+  //   createPage({
+  //     path: ensureTrailingSlash(legacyInsight.path.alias),
+  //     component: path.resolve(`src/templates/legacyInsights.js`),
+  //     context: {
+  //       title: legacyInsight.title,
+  //       author: legacyInsight.relationships.uid.name,
+  //       created: legacyInsight.created,
+  //       body: legacyInsight.body.processed,
+  //     },
+  //   })
+  // );
 
   jobs.nodes.map(job =>
     createPage({

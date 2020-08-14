@@ -59,7 +59,7 @@ const ArticlePreview = ({ article }) => {
             css={css`
               display: block;
             `}
-            to={ensureTrailingSlash(article.path.alias)}
+            to='/404/'
           >
             {article.relationships.field_image && (
               <Img

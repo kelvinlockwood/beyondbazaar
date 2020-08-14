@@ -9,7 +9,6 @@ describe('Navigation', () => {
     cy.get(':nth-child(1) > [href="/insights"]').should('exist');
     cy.get(':nth-child(2) > [href="/about"]').should('exist');
     cy.get(':nth-child(2) > [href="/contact"]').should('exist');
-    cy.get('[href="/drupal"]').should('exist');
     cy.get('[href="/acquia"]').should('exist');
     cy.get('[href="/shopify"]').should('exist');
     cy.get('[href="/gatsby"]').should('exist');

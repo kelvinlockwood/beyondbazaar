@@ -97,13 +97,14 @@ const Insights = ({ data }) => {
               {headerArticle.title}
             </h1>
 
-            <Button
+            {/* <Button
               onClick={() =>
                 navigate(ensureTrailingSlash(headerArticle.path.alias))
               }
             >
               Read More
-            </Button>
+            </Button> */}
+            <Button>Commented Out</Button>
           </>
         ),
       }}

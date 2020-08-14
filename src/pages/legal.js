@@ -7,7 +7,7 @@ import { container, mediaQueries, weights, contentHeadings } from '../styles';
 
 export default () => {
   const date = 'Effective: Apr 1, 2019';
-  const mailto = 'hello@thirdandgrove.com';
+  const mailto = '-----';
 
   return (
     <Layout
@@ -244,7 +244,8 @@ export default () => {
         <p>
           If you have any questions about this Privacy Statement, you should
           contact us by email at&nbsp;
-          <a href={`mailto:${mailto}`}>{mailto}</a>.
+          {/* <a href={`mailto:${mailto}`}>{mailto}</a>. */}
+          <a href={`mailto:${mailto}`}>Enter Email Address In Code</a>.
         </p>
       </div>
     </Layout>

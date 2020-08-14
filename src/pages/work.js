@@ -37,7 +37,7 @@ const Project = ({ study, index }) => {
     >
       <div css={container.medium}>
         <Link
-          to={ensureTrailingSlash(study.path.alias)}
+          to='/404/'
           css={css`
             display: block;
             margin-bottom: 125px;
